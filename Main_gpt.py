@@ -27,5 +27,5 @@ if __name__ == "__main__":
         assistant_response = chat_with_memory(user_input)
         print("Assistant:", assistant_response)
         st.convert_speech(assistant_response)
-        st.play_speech()
+        #st.play_speech()
 
