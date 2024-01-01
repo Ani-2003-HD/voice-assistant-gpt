@@ -11,7 +11,7 @@ def recognize_speech():
     with sr.Microphone() as source:
         print("Say something...")
         recognizer.adjust_for_ambient_noise(source)  # Adjust for ambient noise
-        audio = recognizer.listen(source, timeout=5)  # Listen for up to 5 seconds
+        audio = recognizer.listen(source, timeout=3)  # Listen for up to 3 seconds
 
     try:
         if audio:
